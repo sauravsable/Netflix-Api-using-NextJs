@@ -32,6 +32,7 @@ const Navbar = () => {
                             <Link className={styles.navbarLink}
                                   onClick={() => setOpenMenu(false)}
                                   href="/contact">Contact</Link>
+                                  
                         </li>
                     </ul>
 
