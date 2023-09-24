@@ -6,12 +6,12 @@ export default async function page() {
 
   await new Promise(resolve => setTimeout(resolve, 1000));
 
-  const url = process.env.RAPID_URL;
+  const url = 'https://netflix54.p.rapidapi.com/search/?query=stranger&offset=0&limit_titles=50&limit_suggestions=20&lang=en';
   const options = {
     method: 'GET',
     headers: {
       'X-RapidAPI-Key':process.env.API_KEY,
-      'X-RapidAPI-Host': process.env.HOST
+      'X-RapidAPI-Host': 'netflix54.p.rapidapi.com'
     }
   };
   const res = await fetch(url, options);
